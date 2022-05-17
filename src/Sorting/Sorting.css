@@ -1,0 +1,49 @@
+.sorting {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    width: 100vw;
+    margin-top: 1rem;
+}
+
+.array-container {
+    max-width: 1000px;
+    height: 100%;
+}
+
+.array-bar {
+    width: 25px;
+    background: pink;
+    font-size: 0.5rem;
+    color: white;
+}
+
+/* For dark and light theme */
+:root {
+    --background: white;
+    --text-primary: black;
+    --input-background: #eee;
+}
+
+[data-theme='dark'] {
+    --background: #222;
+    --text-primary: white;
+    --input-background: #2a2a2a;
+}
+
+.theme {
+  background-color: var(--background);
+  height: 100vh;
+}
+
+.theme-icon {
+    cursor: pointer;
+}
+
+.theme-icon :hover {
+    color: orangered;
+}
+
+.input-bar {
+    background: var(--input-background);
+}
